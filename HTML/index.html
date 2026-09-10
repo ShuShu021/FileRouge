@@ -6,6 +6,7 @@
     <title>ExploMonde</title>
     <link rel="stylesheet" href="/CSS/token.css" />
     <link rel="stylesheet" href="/CSS/base.css" />
+    <link rel="stylesheet" href="/CSS/component.css" />
   </head>
   <body>
     <header>
@@ -28,34 +29,31 @@
           <input type="text" id="pays" name="pays" placeholder="Ex : France" />
           <button type="submit">Rechercher</button>
         </form>
+
+        <label for="filtre-region">Filtrer par région</label>
+        <select id="filtre-region">
+          <option value="toutes">Toutes les régions</option>
+          <option value="Europe">Europe</option>
+          <option value="Asie">Asie</option>
+          <option value="Amérique du Nord">Amérique du Nord</option>
+          <option value="Amérique du Sud">Amérique du Sud</option>
+          <option value="Afrique">Afrique</option>
+          <option value="Océanie">Océanie</option>
+        </select>
       </section>
 
       <section id="resultats">
         <h2>Résultats</h2>
 
         <p role="status">Pays affichés :</p>
+      </section>
 
-        <article>
-          <h3>France</h3>
-          <p>Capitale : Paris</p>
-          <p>Région : Europe</p>
-          <p>Population : 68 M</p>
-        </article>
-
-        <article>
-          <h3>Japon</h3>
-          <p>Capitale : Tokyo</p>
-          <p>Région : Asie</p>
-          <p>Population : 125 M</p>
-        </article>
-
-        <article>
-          <h3>Chine</h3>
-          <p>Capitale : Pékin/Beijing</p>
-          <p>Région : Asie</p>
-          <p>Population : 1 412 M</p>
-        </article>
+      <section id="detail-section">
+        <h2>Détail</h2>
+        <p id="detail">Clique sur une carte pour voir son détail.</p>
       </section>
     </main>
+
+    <script type="module" src="/JS/main.js"></script>
   </body>
 </html>
